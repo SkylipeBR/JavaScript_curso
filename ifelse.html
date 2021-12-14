@@ -9,11 +9,11 @@
 <body>
     <script>
 
-        var num1 = prompt('Digiite um numero:')
-        var num2 = 3
+        // var num1 = prompt('Digiite um numero:')
+        // var num2 = 3
 
-        var txt1 = prompt('Digite algum texto')
-        var txt2 = 'Filipe'
+        // var txt1 = prompt('Digite algum texto')
+        // var txt2 = 'Filipe'
 
        //true && true && false = false // somente será verdadeiro se todos forem verdadeiros
     //    if (num1 == num2 && txt1 == txt2 && 'a' == 'b' ) {
@@ -24,12 +24,41 @@
 
 
     // OU || = Na lógica, apenas uma das condições precisa ser verdadeiras
-    if (num1 == num2 || txt1 == txt2 || 'a' == 'b' ) {
-       document.write('Verdadeiro')
-      } else {
-        document.write('False')
-      }
+    // if (num1 == num2 || txt1 == txt2 || 'a' == 'b' ) {
+    //    document.write('Verdadeiro')
+    //   } else {
+    //     document.write('False')
+    //   }
+
+
+    // Negação !! = Irá inverter os papéis por conta de estar em negação
+    // if (!(5 == 4)) {
+    //    document.write('Verdadeiro')
+    //   } else {
+    //     document.write('False')
+    //   }
+
+
+
+      var nota = prompt('Digite a nota do aluno: ')
+      var faltas = prompt('Digite a quantidade de faltas')
+
+      var media = 7
+      var falta_maximas = 15
+
+        // só irá ser aprovado ser as duas condições forem verdadeiras
+        // if(nota >= media && faltas <= falta_maximas) {
+        //     document.write('Aprovado')
+        //     // Lógicas mais complexas, do que o operador ternario
+        // } else
+        // {
+        //     document.write('Reprovado')
+        // }
+
+        var resultado = (nota >= media && faltas <= falta_maximas ? 'Aprovado' : "Reprovado")
     
+
+        document.write(resultado)
     </script>
 </body>
 </html>
